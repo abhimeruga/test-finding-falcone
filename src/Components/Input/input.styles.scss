@@ -1,0 +1,45 @@
+$sub-color: grey;
+$main-color: black;
+@mixin shrink {
+    top: 20px;
+    font-size: 20px;
+    left: 20px;
+}
+.input-div {
+    display: flex;
+    width: 30%;
+    padding: 10px 20px;
+    position: relative;
+
+    .input{
+        background: none;
+        background-color: white;
+        color: $sub-color;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $sub-color;
+        margin: 25px 0;
+
+        &:focus{
+            outline:none;
+            
+        }
+        &:focus ~ .input-label {
+            @include shrink();
+        }
+        
+    }
+    .input-label {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        transition: 300ms ease all;
+    }
+    
+}
+
+

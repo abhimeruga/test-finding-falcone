@@ -1,0 +1,18 @@
+.radio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+.button {
+    align-items: center;
+    margin-top: 8px;
+}
+.disable {
+    color: gray;
+    background-color: lightgrey;
+}
+.time{
+    padding-top: 60px;
+}
